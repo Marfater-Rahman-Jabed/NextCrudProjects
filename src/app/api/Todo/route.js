@@ -32,7 +32,7 @@ export async function POST(request) {
         const createdTodo = await todos.save()
         return NextResponse.json(todos)
     } catch (error) {
-        cosnole.log(error)
+        console.log(error)
         return NextResponse.json({
             message: 'error failed to create todos',
             status: false

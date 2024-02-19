@@ -33,7 +33,7 @@ const Todopage = () => {
                         <label className="label">
                             <span className="label-text">Description</span>
                         </label>
-                        <input type="text" placeholder="Description" className="input input-bordered" required onChange={(e) => setStatus(e.target.value)} />
+                        <textarea type="text" placeholder="Description" className="input input-bordered" required onChange={(e) => setDescription(e.target.value)} />
                         {/* <label className="label">
                             <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
                         </label> */}
@@ -42,7 +42,7 @@ const Todopage = () => {
                         <label className="label">
                             <span className="label-text">Status</span>
                         </label>
-                        <input type="text" placeholder="Status" className="input input-bordered" required onChange={(e) => setDescription(e.target.value)} />
+                        <input type="text" placeholder="Status" className="input input-bordered" required onChange={(e) => setStatus(e.target.value)} />
                         {/* <label className="label">
                             <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
                         </label> */}
